@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MONO — Diseño UX/UI &amp; Desarrollo Web a medida</title>
+<meta name="description" content="Estudio de diseño UX/UI y desarrollo de páginas web personalizadas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="is-loading">
+
+<div class="preloader" id="preloader">
+  <div class="preloader-marks">
+    <span class="pl-sq pl-sq1"></span><span class="pl-sq pl-sq2"></span>
+  </div>
+  <div class="preloader-bar"><span id="preloaderFill"></span></div>
+</div>
+
+<div class="grain"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- NAV -->
+<header class="nav-wrap">
+  <div class="nav-pill">
+    <a href="#top" class="logo" aria-label="MONO — inicio">
+      <span class="logo-mark" aria-hidden="true"><span class="sq sq1"></span><span class="sq sq2"></span></span>
+      <span class="logo-word">MONO</span>
+    </a>
+    <nav class="nav-links" aria-label="Navegación principal">
+      <a href="#servicios">Servicios</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#trabajo">Trabajo</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a href="#contacto" class="nav-cta magnetic"><span>Iniciar proyecto</span></a>
+    <button class="nav-burger" id="navBurger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#servicios">Servicios</a>
+  <a href="#proceso">Proceso</a>
+  <a href="#trabajo">Trabajo</a>
+  <a href="#contacto">Contacto</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="blob-field" aria-hidden="true">
+    <div class="blob blob-a" id="blobA"></div>
+    <div class="blob blob-b" id="blobB"></div>
+    <span class="float-shape fs-1"></span>
+    <span class="float-shape fs-2"></span>
+    <span class="float-shape fs-3"></span>
+    <span class="float-shape fs-4"></span>
+    <span class="float-shape fs-5"></span>
+  </div>
+
+  <div class="hero-inner">
+    <p class="eyebrow load-in" style="--d:0">Estudio de diseño &amp; desarrollo</p>
+
+    <h1 class="hero-title load-in" style="--d:1">
+      Sitios que no
+      <span class="hero-title-strike">
+        <span class="strike-out">se ven</span>
+        <span class="strike-in">se sienten</span>
+      </span>
+      distintos.
+    </h1>
+
+    <p class="hero-sub load-in" style="--d:2">
+      Diseño UX/UI y desarrollo web a la medida. Construimos desde cero,
+      sin plantillas, para marcas que no quieren parecerse a nadie más.
+    </p>
+
+    <div class="hero-actions load-in" style="--d:3">
+      <a href="#contacto" class="btn-fill magnetic"><span>Empezar un proyecto</span></a>
+      <a href="#trabajo" class="btn-ghost magnetic"><span>Ver trabajo <span class="btn-arrow">→</span></span></a>
+    </div>
+  </div>
+
+  <a href="#stats" class="scroll-cue reveal" aria-label="Bajar">
+    <span class="scroll-cue-ring"></span>
+  </a>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>UX/UI</span><span class="mq-dot">●</span><span>DESARROLLO A MEDIDA</span><span class="mq-dot">●</span>
+    <span>DISEÑO DE PRODUCTO</span><span class="mq-dot">●</span><span>FRONT-END</span><span class="mq-dot">●</span>
+    <span>SISTEMAS DE DISEÑO</span><span class="mq-dot">●</span>
+    <span>UX/UI</span><span class="mq-dot">●</span><span>DESARROLLO A MEDIDA</span><span class="mq-dot">●</span>
+    <span>DISEÑO DE PRODUCTO</span><span class="mq-dot">●</span><span>FRONT-END</span><span class="mq-dot">●</span>
+    <span>SISTEMAS DE DISEÑO</span><span class="mq-dot">●</span>
+  </div>
+</div>
+
+<!-- STATS -->
+<section class="stats" id="stats">
+  <div class="stat reveal">
+    <span class="stat-num" data-count-to="2" data-pad="2">00</span>
+    <span class="stat-label">disciplinas bajo un mismo techo</span>
+  </div>
+  <div class="stat reveal">
+    <span class="stat-num" data-count-to="100" data-suffix="%">0%</span>
+    <span class="stat-label">código propio, cero plantillas</span>
+  </div>
+  <div class="stat reveal">
+    <span class="stat-num" data-count-to="5" data-pad="2">00</span>
+    <span class="stat-label">etapas, un solo equipo</span>
+  </div>
+</section>
+
+<!-- SERVICIOS (sticky stack) -->
+<section class="services" id="servicios">
+  <div class="section-head reveal">
+    <p class="eyebrow">Servicios</p>
+    <h2>Lo que hacemos, bien hecho</h2>
+  </div>
+
+  <div class="stack">
+    <article class="stack-card" style="--i:0">
+      <div class="stack-card-inner">
+        <div class="stack-top">
+          <span class="stack-tag">01 / UX/UI</span>
+          <div class="stack-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="8" width="36" height="24" rx="4" stroke="currentColor" stroke-width="2"/><line x1="6" y1="17" x2="42" y2="17" stroke="currentColor" stroke-width="2"/><circle cx="11.5" cy="12.5" r="1.5" fill="currentColor"/><circle cx="17" cy="12.5" r="1.5" fill="currentColor"/><rect x="14" y="36" width="20" height="4" rx="2" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+        </div>
+        <h3>Diseño UX/UI</h3>
+        <p>Investigamos a tus usuarios, mapeamos flujos reales y diseñamos interfaces que se explican solas — de wireframe a interfaz final, con un sistema que tu equipo puede seguir usando.</p>
+        <ul class="stack-list">
+          <li>Investigación y arquitectura de información</li>
+          <li>Wireframes y prototipos navegables</li>
+          <li>Interfaz visual y sistema de diseño</li>
+          <li>Pruebas de usabilidad</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="stack-card" style="--i:1">
+      <div class="stack-card-inner stack-card-dark">
+        <div class="stack-top">
+          <span class="stack-tag">02 / DESARROLLO</span>
+          <div class="stack-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M16 14L6 24L16 34" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M32 14L42 24L32 34" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M27 10L21 38" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+        </div>
+        <h3>Desarrollo web a medida</h3>
+        <p>Construimos el sitio desde cero: código propio, rápido y hecho para crecer. Cada componente responde a lo que tu marca y tus usuarios necesitan — nada enlatado.</p>
+        <ul class="stack-list">
+          <li>Sitios y aplicaciones a medida</li>
+          <li>Animaciones e interacciones propias</li>
+          <li>Integraciones y paneles de administración</li>
+          <li>Rendimiento, accesibilidad y SEO técnico</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- PROCESO -->
+<section class="process" id="proceso">
+  <div class="section-head reveal">
+    <p class="eyebrow">Proceso</p>
+    <h2>De idea a producto, sin misterios</h2>
+  </div>
+
+  <ol class="process-list" id="processList">
+    <div class="process-line" id="processLine"></div>
+    <li class="process-step reveal"><span class="process-num">01</span><div><h3>Descubrimiento</h3><p>Entendemos tu negocio, tus usuarios y el problema real que hay que resolver.</p></div></li>
+    <li class="process-step reveal"><span class="process-num">02</span><div><h3>Diseño</h3><p>Wireframes, prototipos y UI final. Validamos contigo en cada etapa, no al final.</p></div></li>
+    <li class="process-step reveal"><span class="process-num">03</span><div><h3>Desarrollo</h3><p>Construimos el sitio con código propio, probado en dispositivos reales.</p></div></li>
+    <li class="process-step reveal"><span class="process-num">04</span><div><h3>Lanzamiento</h3><p>Publicamos, medimos y ajustamos con datos reales de uso.</p></div></li>
+    <li class="process-step reveal"><span class="process-num">05</span><div><h3>Soporte</h3><p>Seguimos disponibles para mejoras, contenido nuevo y mantenimiento.</p></div></li>
+  </ol>
+</section>
+
+<!-- TRABAJO -->
+<section class="work" id="trabajo">
+  <div class="section-head reveal">
+    <p class="eyebrow">Trabajo</p>
+    <h2>Selección de proyectos</h2>
+  </div>
+
+  <div class="work-grid">
+    <a href="#" class="work-tile reveal work-tile-lg" data-pattern="1"><div class="work-tile-visual"></div><div class="work-tile-info"><h3>Panel de reservas</h3><span class="work-tag">UX/UI · Desarrollo</span></div></a>
+    <a href="#" class="work-tile reveal" data-pattern="2"><div class="work-tile-visual"></div><div class="work-tile-info"><h3>Tienda en línea</h3><span class="work-tag">Desarrollo</span></div></a>
+    <a href="#" class="work-tile reveal" data-pattern="3"><div class="work-tile-visual"></div><div class="work-tile-info"><h3>App de finanzas</h3><span class="work-tag">UX/UI</span></div></a>
+    <a href="#" class="work-tile reveal work-tile-lg" data-pattern="4"><div class="work-tile-visual"></div><div class="work-tile-info"><h3>Sitio corporativo</h3><span class="work-tag">UX/UI · Desarrollo</span></div></a>
+  </div>
+  <p class="work-note reveal">Espacio de ejemplo — sustituye estas tarjetas con capturas reales de tus proyectos.</p>
+</section>
+
+<!-- PRINCIPIOS -->
+<section class="principles">
+  <div class="principles-track principles-track-1" aria-hidden="true">
+    <span>SIN PLANTILLAS</span><span class="pr-dot">✱</span>
+    <span>SIN RELLENO</span><span class="pr-dot">✱</span>
+    <span>SIN "YA SE VE BIEN"</span><span class="pr-dot">✱</span>
+    <span>SIN PLANTILLAS</span><span class="pr-dot">✱</span>
+    <span>SIN RELLENO</span><span class="pr-dot">✱</span>
+    <span>SIN "YA SE VE BIEN"</span><span class="pr-dot">✱</span>
+  </div>
+  <div class="principles-track principles-track-2" aria-hidden="true">
+    <span>DISEÑO</span><span class="pr-dot">✱</span>
+    <span>CÓDIGO</span><span class="pr-dot">✱</span>
+    <span>DETALLE</span><span class="pr-dot">✱</span>
+    <span>DISEÑO</span><span class="pr-dot">✱</span>
+    <span>CÓDIGO</span><span class="pr-dot">✱</span>
+    <span>DETALLE</span><span class="pr-dot">✱</span>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="contact" id="contacto">
+  <div class="contact-inner">
+    <div class="contact-copy reveal">
+      <p class="eyebrow">Contacto</p>
+      <h2>Cuéntanos de tu proyecto</h2>
+      <p class="contact-lead">Respondemos en menos de 2 días hábiles. Sin formularios eternos.</p>
+      <a class="contact-email" href="mailto:hola@tuempresa.com">hola@tuempresa.com</a>
+    </div>
+
+    <form class="contact-form reveal" id="contactForm">
+      <div class="field"><label for="name">Nombre</label><input type="text" id="name" name="name" required autocomplete="name"></div>
+      <div class="field"><label for="email">Correo</label><input type="email" id="email" name="email" required autocomplete="email"></div>
+      <div class="field">
+        <label for="service">¿Qué necesitas?</label>
+        <select id="service" name="service">
+          <option value="ux">Diseño UX/UI</option>
+          <option value="dev">Desarrollo web a medida</option>
+          <option value="both">Ambos</option>
+        </select>
+      </div>
+      <div class="field"><label for="message">Mensaje</label><textarea id="message" name="message" rows="4" required></textarea></div>
+      <button type="submit" class="btn-fill submit-btn magnetic"><span>Enviar mensaje</span></button>
+      <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <a href="#top" class="logo">
+    <span class="logo-mark" aria-hidden="true"><span class="sq sq1"></span><span class="sq sq2"></span></span>
+    <span class="logo-word">MONO</span>
+  </a>
+  <nav class="footer-links" aria-label="Enlaces del pie de página">
+    <a href="#servicios">Servicios</a><a href="#proceso">Proceso</a><a href="#trabajo">Trabajo</a><a href="#contacto">Contacto</a>
+  </nav>
+  <p class="footer-copy">© <span id="year"></span> MONO Studio. Todos los derechos reservados.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
