@@ -33,10 +33,6 @@ The visual direction aims to communicate a minimal, sophisticated, and distincti
 
 MONO was created with the idea of building websites that don't just work, but have a personality of their own.
 
-## 📸 Website Preview
-
 <div align="center">
-
-<img src="https://github.com/AnaBanana27/TEST-WEBSITE-MONO/blob/main/preview.png?raw=true" alt="Website preview image" width="90%">
 
 </div>
